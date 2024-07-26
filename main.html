@@ -18,14 +18,16 @@
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .form-group {
+            margin-bottom: 15px;
+        }
         label {
             display: block;
-            margin: 10px 0 5px;
+            margin: 5px 0;
         }
         input[type="text"], select {
-            width: calc(100% - 16px);
+            width: calc(100% - 18px);
             padding: 8px;
-            margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
@@ -73,7 +75,7 @@
 
         <div class="form-group">
             <label for="breeds">Please select your preferred breeds</label>
-            <select id="breeds" name="breeds" multiple size="5" required>
+            <select id="breeds" name="breeds[]" multiple size="5" required>
                 <option value="labrador">Labrador</option>
                 <option value="beagle">Beagle</option>
                 <option value="bulldog">Bulldog</option>
@@ -86,4 +88,5 @@
     </form>
 </body>
 </html>
+
 
